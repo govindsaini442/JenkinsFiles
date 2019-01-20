@@ -12,6 +12,7 @@ pipeline{
 		stage ('Compile') {
 			steps {
 				echo "Hello From Compile"
+				echo "Compile is completed"
 			}
 		}
 		
