@@ -1,6 +1,5 @@
 pipeline{
-	agent any
-	
+	agent any	
 	stages{
 		stage ('Checkout') {
 			steps {
@@ -8,14 +7,12 @@ pipeline{
 				echo "Checkout done"
 			}
 		}
-		
 		stage ('Compile') {
 			steps {
 				echo "Hello From Compile"
 				echo "Compile is completed"
 			}
 		}
-		
 		stage ('Deploy') {
 			steps {
 				echo "Hello From Deploy"
