@@ -5,6 +5,7 @@ pipeline{
 		stage ('Checkout') {
 			steps {
 				echo "Hello From Checkout"
+				echo "Checkout done"
 			}
 		}
 		
