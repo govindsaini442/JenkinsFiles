@@ -1,21 +1,22 @@
-Pipeline {
+pipeline{
 	agent any
-	{
-		stages{
-			stage ('Checkout'){
-				steps{
-				echo "Code is checking out"
-				}
+	
+	stages{
+		stage ('Checkout') {
+			steps {
+				echo "Hello From Checkout"
 			}
-			stage ('Compile'){
-				steps{
-				echo "Code is Compiling"
-				}
+		}
+		
+		stage ('Compile') {
+			steps {
+				echo "Hello From Compile"
 			}
-			stage ('Deploy'){
-				steps{
-				echo "Code is deploying"
-				}
+		}
+		
+		stage ('Deploy') {
+			steps {
+				echo "Hello From Deploy"
 			}
 		}
 	}
